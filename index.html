@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO BUSQUEDA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.2.0/tailwind.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    
+    <div class="w-full max-w-xs">
+        <form id="form" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="">
+                 <p class="text-center text-black">
+                 <b><a target="_blank">INVITACION A LA PLATAFORMA - TRABAJOS 24/7</a></b>
+                 <br>  </br>
+            </p>
+           
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="Cedula">
+                      Codigo de Pais. 
+                </label>
+                <input
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    name="Cedula" id="Cedula" type="tel" placeholder="Numero de Carnet" value= "591" required >
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="Celular">
+                      Numero de Celular. <i class="fab fa-whatsapp"></i>
+                </label>
+                <input
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    name="Celular" id="Celular" type="tel" placeholder="Numero de whatsapp" required>
+            </div>
+      
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="Servicio1">
+                    Tipo de Turno.
+                </label>                  
+                    <select name="Servicio1" id="Servicio1"onchange="carg(this);" 
+                    class="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" > 
+                        <option value="1"></option>
+                        <option value="2">Muy Buenos Días, </option>
+                        <option value="3">Muy Buenas Tardes, </option>
+                        <option value="4">Muy Buenas Noches, </option>
+                    </select>
+                     
+            </div>
+          
+            
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="Detalle">
+                    Detalle de la Invitación
+                </label>
+                   <textarea name="Detalle" id="Detalle"rows="8" cols="35"
+                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                   placeholder=""
+                   >✏️Somos de la Plataforma de Trabajos 24/7,  Lo invitamos a formar parte de nuestra Red de Servicios.📝 "*Registro Gratis*"</textarea>
+                   <br>  </br>
+            <div class="flex items-center justify-between">
+                <button id="submit"
+                    class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="submit">
+                    <i class="fab fa-whatsapp"></i> Enviar Registro
+                </button>
+            </div>
+        </form>
+        <p class="text-center text-gray-500 text-xs">
+            Desarrollado por: <b><a target="_blank" href="https://google.com">TRABAJOS 24/7</a></b>
+        </p>
+    </div>
+    <script src="https://kit.fontawesome.com/1e268974cb.js" crossorigin="anonymous"></script>
+    <script src="assets/js/helpers.js"></script>
+    <script src="assets/js/whatsapp.js"></script>
+ 
+</body>
+
+</html>
